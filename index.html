@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="icon" href="assets/favicon.ico" >
+
+        <!-- =====BOX ICONS===== -->
+        
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Personal website</title>
+    </head>
+    <body>
+        
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Divya Kala</a> 
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#Interned at" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Divya kala</span></h1>
+                    <p class="note"> Enthusiastic and Passionate Programmer<br>
+                    Always curious to learn new stuff.<br> I am very keen on working in a new and challenging environment.</p>
+
+                    <a href="#" class="button">Contact</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/divya-kala-b705bb278/" class="home__social-icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAN1JREFUOE/tlMsJAjEURc90oBVoB+JOFPx0Ygeu3Akqbl3YgpX4ARndaQeWoB3IHTLyiCgk4+DGQCAkvPPuuxeSUMJKSmDiQzuA9h44xja00C6wM6AWcIoBW+gEWBjIGFgWhfaBjYG0gbQoVPU956lsOMQAVRObfgVouKYX4GYFWKg//gDYuq0JtOaAgCNvipl7y65DoVeg/saWXEQwVLw7cHbwmmmwBoYxSlXTdFCdpTwHK1xZGKz0WegUroy/Cqv6DagCmhoLsoxCg/KV/qE/8DT2/3ipi/1QPgp4ADiNRhYEm758AAAAAElFTkSuQmCC"/></i></a>
+                    <a href="https://github.com/divya123-123"           class="home__social-icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAXxJREFUOE+1lIExBEEQRd9FgAgQASJABIgAESACROBEwGVABIgAEZABIqDeVs9V79i921Olq66uZnbm9fSf3zPiH2K0AHMHeI/fzG2zoMvAObAPrFWUR+AWmHTR+6BHwBUgeFZ48gPgJS/qgnqCwwVk+QR2M7iGesKbAF4Cjld7EtzH/B4geKvonaGW+hYlvwKbsUmwZZZwnWNL9vIe4oP6upYMvYiLcd7MKwMkyFCXr5swQ828UWedAy6nXop1Z8A4Q78TQOG1zZDIF/ukJAWqD9WzhKUrwZDIsrWglvHxx5OOgZPY24I6l8vXTp5gSOiEYrvGAVnTO0DPldtvGbqHXjfKse2bocX419HrJnCTF5Z7XP395vriZXN+lbauO0rAdrTdaWzOjeDm+lJLEY2dHNRQMwt+DrDj1mMRhKy/U9Nu6oI6V8C6QZ29Uf9zZKhAq5pasO/p02KW4mvV5QShaqhDmpJzzHv5y+OcH5RSTZcsDXsedIhPf635AXzSUhZxRGglAAAAAElFTkSuQmCC"/></a>
+                    
+                    <a href="https://www.instagram.com/dream_girl_divya_333/" class="home__social-icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAXlJREFUOE+9lDEyBFEQhr8tByAVIVMlwA1IJTgBToBQhBuovQAyGTfADYiEOAFSkfq2utXbtzNmqVpdNTU18/r9f/f/93s9JhC9CWDyE+g8MNdB+gi81zlNoGvAOSDoOHEBHJbgNaiAt8A9cNZURcVi/gHwDKzmWg36AviY3BVHwBTwAfSjWgsZ0tR2ZdwGbirEUl+7MJ6ARWAWuIp/g2LKSrP1deAukmaA42gxeTRmD1gCPoFXYCM8aAUtiWxnN0AlsuItYD80fAimkyAf7G2qNP+lHFalw2UIpvYSGGODphwLAVCCCrIDuPYn0FLjBFYWSVd+C2q+pti6s5iheU7JZfG/s/2yXTW7BtTQMRNQ43TcSvOICiqx650jZY4tukkQzXEK/C7PfBKOjJQsbzGDtduV+SOfSWYXI7eUYJuA5uQMdgG6x0n4NrQ++1Zre8vxzpPVBOwc267v05BkkNd2nyq6JqnndEup3qW27XgNkf/7zd+lZev6F32hVhYceV02AAAAAElFTkSuQmCC"/></a>
+                    <a href="mailto: divyadivya2820@gmail.com"         class="home__social-icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAASRJREFUOE/VlGFNA0EQRl8VgAQcgIPWAeAAB+CAogBQAA4ABYADUAASqALIu8ySyd7t3fVHSZjkkjY3++b7vp12wQ5qsQMmfwY9AI6B/S1dvAFPnqmVCvzYEpbbr4B1Db0ArqPrFXiZMUBH5+nMqoaugcsE8rvTW3UEPAA6tBTShJrNCtgLtafAV0XOrm5D7ShUdTfAI7AMoGDj0O4dcAJsgLPo+55S2gUeynIkDhKm3ff4/Bl9PajTDxvBdZZCjXFY2tV+rh7UQ88NaLlMB9/HYyx19aDaMZuhKjFMbVczUxV7MXWNrVXpnbyoGjrnP6IJNYayyBnsKrno5dc2FIUuB/c0N7s+eSOMoHWZnvvd2TFbqsv5zomgEzW7cerq8/v/A/0Bt4FAFkMw3d0AAAAASUVORK5CYII="/></a>
+                    <a href="https://wa.me/+918639652478" target="_blank" class="home__social-icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAYFJREFUOE+1lO0xREEQRc9GgAgQASJABkSADIgAESACMkAEiAARkAEioM7UtOqd97V/dqpe7dabnjunb3e/GUtYsyVosqjoNrAC/ABvUyBjoqvAOXAM+D+vZ+AGeOi7YEh0D7iHksldPSzhBiC1+0f1/QnwncX7RD30CjxWyrkD6bDCkn4AO2OipmnQC3Aw5V0lN4Nr4CLiW1I3TmuwhJJsAZsjFxh/VWlLEVvRzypkYNhg3D5gcYaW5/S+0GZRU/9KAln0cKjS9ZbogmJZFtX4p4ZKukh/qGDqSGg3FJuyqO1ikXKq0ioc7xWOns2XKCql8R1PfwH7Tn9iZWEP+whgxS+n0ndfbxxHafNS2Iu0ItZ7JYtanNWLOqSm4CTZzH0z7n70r8RWXWJHWfpiSdtSbt4Ca+3oDfRSxM9Z1oqaoqlKs1uFHNe28lLZ8Mbp6/80DTX/ekOloFZE89t6Pn4GJe18qTJpFMPDBvorUfbR+2J8jent3UU/0iMT2t1aiugfqQdYFqJNMGsAAAAASUVORK5CYII="/></a>
+                </div>
+
+                <div class="home__img">    
+                    <img src="assets/img/m_pic.jpg" alt="">
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/m_pic.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'am Divya Kala</h2>
+                        <p class="about__text">
+                            - 🎓 Information Technology Student @ SWRN. <br> 
+                            - 👨🏻‍💻 Passionate programmer & Optimistic. <br>
+                            - 👨🏻‍💻 Love Coding ♡. <br>
+                            - 📚 Understanding projects & Ideas 🚀. <br>
+                            - 🔭 Always curious to learn new stuff and am very keen on working in a new and challenging environment. <br>
+                            - ⚡ I count with good absorption to new technologies, learning and presenting skills.  </p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                        <p class="skills__text"></p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                
+                                <span class="skills__name"> C Language</span>
+                            </div>
+                            <div class="skills__bar skills__C">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                
+                                <span class="skills__name">PYTHON</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">80%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='#'></i>
+                                <span class="skills__name">JAVA(core)</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">70%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='#'></i>
+                                <span class="skills__name">AgularJs</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='#' ></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">45%</span>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    
+                    <div>              
+                        <img src="assets/img/work3.jpg" alt="" class="skills__img width=200px height=300px">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="Interned at">
+                <h2 class="section-title">Interned at</h2>
+
+                <div class="work__container bd-grid">
+                    <div class="work__img">
+                    <img src="assets/img/verzeo.jpeg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/bharatintern.png" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/edunet.png" alt="">
+                    </div>
+                    <!--<div class="work__img">
+                        <img src="assets/img/languify.jpeg" alt="">
+                    </div>
+                     <div class="work__img">
+                        <img src="assets/img/work5.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work6.jpg" alt="">
+                    </div> -->
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="SEND" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Divya Kala</p>
+            <div class="footer__social">
+                <a href="https://www.instagram.com/dream_girl_divya_333/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://www.linkedin.com/in/divya-kala-b705bb278/" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://wa.me/+918639652478" class="footer__icon"><i class='bx bxl-whatsapp' ></i></a>          
+            </div>
+            <p>&#169; 2022-oct-16 copyright all rights reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
